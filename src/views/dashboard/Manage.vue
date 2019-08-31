@@ -174,7 +174,7 @@ export default {
       return publishTypeOptions[status] || '未发布'
     },
     pubUrlFilter (hash) {
-      return hash ? window.location.protocol + '//' + window.location.host + '/dashboard/' + hash : ''
+      return hash ? window.location.protocol + '//' + window.location.host + '/#/dashboard/' + hash : ''
     },
     needRepublish (row) {
       return row.publish.status !== 'published' || row.config.timestamp <= row.publish.timestamp
